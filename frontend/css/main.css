@@ -9,11 +9,13 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Montserrat", sans-serif;
+  background-color: #ECECEC;
 }
 
 nav {
   padding: 5px 5%;
   display: flex;
+  height: 5rem;
   justify-content: space-between;
   align-items: center;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
@@ -293,9 +295,6 @@ nav ul li a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url(https://images.unsplash.com/photo-1519120944692-1a8d8cfc107f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80);
-  background-size: cover;
-  background-position: center;
   
 /*  this is where the magic happens:  */
   background-attachment: fixed;
@@ -335,6 +334,11 @@ h3 {
   -webkit-box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
   -moz-box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
   box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
+  transition: transform 1s;
+}
+
+.item:hover{
+  transform: scale(1.1);
 }
 
 .img {
@@ -378,6 +382,16 @@ h3 {
         transform: translateY(0px);
     }
 }
+
+
+footer{
+  background-color: #619ebf;
+  height: 30vh;
+  padding: 2rem 5rem;
+  color: white;
+}
+
+
 
 /* resposive part */
 @media screen and (max-width: 980px) {
