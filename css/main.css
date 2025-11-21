@@ -119,7 +119,12 @@ nav ul li a:hover {
   list-style: none;
 }
 .menubar ul li {
-  margin-bottom: 32px;
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
 
 .menubar ul li a {

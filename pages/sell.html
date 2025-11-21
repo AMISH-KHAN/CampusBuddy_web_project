@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Signup Form</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/sell.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <nav>
+      <div class="logo">
+        <!-- <img src="assets/Logo64x64.png" alt="logo" /> -->
+        <h1><a href="../index.html"> Campus Buddy</a></h1>
+      </div>
+      <ul id="links">
+        <li>
+            <a href="./events.html">Events</a>
+            <a href="./marketPlace.html">MarketPlace</a>
+            <a href="./sell.html" class="sell">Sell</a>
+            <a class="logout">Logout</a>
+            <a href="./login.html" class="login">Login/Sign up</a>
+
+        </li>
+        
+      </ul>
+      <div class="hamburger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </nav>
+    <div class="menubar">
+      <ul>
+         <li>
+            <a href="./events.html">Events</a>
+            <a href="./marketPlace.html">MarketPlace</a>
+            <a href="./sell.html" class="sell">Sell</a>
+            <a class="logout">Logout</a>
+            <a href="./login.html" class="login">Login/Sign up</a>
+        </li>
+        
+      </ul>
+    </div>
+
+
+    <div class="sell-main-container">
+    <!-- Author: FormBold Team -->
+    <!-- Learn More: https://formbold.com -->
+    <div class="form-wrapper">
+        <!-- <img
+            src="https://ucarecdn.com/364ed385-e3d2-4955-9133-8aea1bd11b16/reimbursementform.png"
+            alt="Reimbursement Form Illustration"
+            class="form-image"
+        /> -->
+
+        <form
+            action="#"
+            method="POST"
+            enctype="multipart/form-data"
+        >
+            <!-- Title and Description -->
+            <div class="form-header">
+                <h2 class="form-title"> Sell Item</h2>
+                <p class="form-description">
+                    Please fill out the form with accurate details for your
+                    product details. All required fields are marked with
+                    *.
+                </p>
+            </div>
+
+            <!-- Personal Information -->
+            <div class="form-group">
+                <label for="fullname" class="form-label">Full Name*</label>
+                <input
+                    type="text"
+                    name="fullname"
+                    id="sell-fullname"
+                    class="form-input"
+                    required
+                />
+            </div>
+            <div class="form-group">
+                <label for="email" class="form-label">Email Address*</label>
+                <input
+                    type="email"
+                    name="email"
+                    id="sell-email"
+                    class="form-input"
+                    required
+                />
+            </div>
+
+             <div class="form-group">
+                <label for="productName" class="form-label">Product Name*</label>
+                <input
+                    type="text"
+                    name="ProductName"
+                    id="sell-productName"
+                    class="form-input"
+                    required
+                />
+            </div>
+            <div class="form-group">
+                <label for="price" class="form-label">Price*</label>
+                <input
+                    type="number"
+                    name="price"
+                    id="sell-price"
+                    class="form-input"
+                    required
+                />
+            </div>
+            <div class="form-group">
+                <label for="number" class="form-label">Phone*</label>
+                <input
+                    type="number"
+                    name="number"
+                    id="sell-number"
+                    class="form-input"
+                    required
+                />
+            </div>
+
+
+
+            <!-- Document Upload -->
+            <div class="form-group">
+                <label for="receipt" class="form-label"
+                    >Upload Photo*</label
+                >
+                <input
+                    type="file"
+                    name="imgFile"
+                    id="imgFile"
+                    accept=".jpg,.jpeg,.png"
+                    class="form-input"
+                    required
+                />
+            </div>
+
+            
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn" id="sell-submit-btn"
+                >Submit</button
+            >
+        </form>
+    </div>
+</div>
+
+<script src="../js/script.js"></script>
+<!-- <script type="module" src="./backend/index.js"></script> -->
+<script type="module"  src="../backend/index.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/12.6.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/12.6.0/firebase-firestore-compat.js"></script>
+</body>
+</html>

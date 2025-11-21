@@ -15,9 +15,13 @@
         <!-- <img src="assets/Logo64x64.png" alt="logo" /> -->
         <h1><a href="../index.html"> Campus Buddy</a></h1>
       </div>
-      <ul>
+      <ul id="links">
         <li>
-          <a href="./login.html">Login/Sign up</a>
+          <a href="./events.html">Events</a>
+            <a href="./marketPlace.html">MarketPlace</a>
+            <a href="./sell.html" class="sell">Sell</a>
+            <a class="logout">Logout</a>
+            <a href="./login.html" class="login">Login/Sign up</a>
         </li>
         
       </ul>
@@ -30,7 +34,11 @@
     <div class="menubar">
       <ul>
          <li>
-          <a href="#">Login/Sign up</a>
+          <a href="./events.html">Events</a>
+            <a href="./marketPlace.html">MarketPlace</a>
+            <a href="./sell.html" class="sell">Sell</a>
+            <a class="logout">Logout</a>
+            <a href="./login.html" class="login">Login/Sign up</a>
         </li>
         
       </ul>
@@ -46,18 +54,16 @@
   <div class="img-market"><img src="https://images.unsplash.com/photo-1496150590317-f8d952453f93?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y3ljbGV8ZW58MHx8MHx8fDA%3D" alt="Cycle"></div>
  </div>
  <div class="info">
-  <div class="cat">Cycle</div>
-  <h2 class="title">Mountain Bike Gear cycle</h2>
+  <h2 class="title" id="product-name">Mountain Bike Gear cycle</h2>
   <p class="desc">
-Lightweight geared bicycle with smooth shifting, strong brakes, and perfect for daily rides.</p>
+<!-- Lightweight geared bicycle with smooth shifting, strong brakes, and perfect for daily rides.</p> -->
   <div class="feats">
-   <span class="feat">Bycyle</span>
-   <span class="feat">gear</span>
-   <span class="feat">2024 model</span>
+   <span class="feat" id="sell-name">name: Amish</span>
+   <span class="feat" id="sell-num">Phone: 7618241924</span>
   </div>
   <div class="bottom">
    <div class="price">
-    <span class="new">₹5000</span>
+    <span class="new" id="product-price">₹5000</span>
    </div>
    <button class="btn">
     <span>Buy Now</span>
@@ -68,63 +74,14 @@ Lightweight geared bicycle with smooth shifting, strong brakes, and perfect for 
   </div>
  </div>
 
-    <div class="card">
- <div class="tilt">
-  <div class="img-market"><img src="https://images.unsplash.com/photo-1496150590317-f8d952453f93?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y3ljbGV8ZW58MHx8MHx8fDA%3D" alt="Cycle"></div>
- </div>
- <div class="info">
-  <div class="cat">Cycle</div>
-  <h2 class="title">Mountain Bike Gear cycle</h2>
-  <p class="desc">
-Lightweight geared bicycle with smooth shifting, strong brakes, and perfect for daily rides.</p>
-  <div class="feats">
-   <span class="feat">Bycyle</span>
-   <span class="feat">gear</span>
-   <span class="feat">2024 model</span>
-  </div>
-  <div class="bottom">
-   <div class="price">
-    <span class="new">₹5000</span>
-   </div>
-   <button class="btn">
-    <span>Buy Now</span>
-    
-   </button>
-  </div>
   
-  </div>
- </div>
 
-    <div class="card">
- <div class="tilt">
-  <div class="img-market"><img src="https://images.unsplash.com/photo-1496150590317-f8d952453f93?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y3ljbGV8ZW58MHx8MHx8fDA%3D" alt="Cycle"></div>
- </div>
- <div class="info">
-  <div class="cat">Cycle</div>
-  <h2 class="title">Mountain Bike Gear cycle</h2>
-  <p class="desc">
-Lightweight geared bicycle with smooth shifting, strong brakes, and perfect for daily rides.</p>
-  <div class="feats">
-   <span class="feat">Bycyle</span>
-   <span class="feat">gear</span>
-   <span class="feat">2024 model</span>
-  </div>
-  <div class="bottom">
-   <div class="price">
-    <span class="new">₹5000</span>
-   </div>
-   <button class="btn">
-    <span>Buy Now</span>
-    
-   </button>
-  </div>
-  
-  </div>
- </div>
-
+   
 
 </div>
-
+<script type="module"  src="../backend/index.js"></script>
+<script type="module" src="../js/market.js"></script>
+<script src="../js/script.js"></script>
 </body>
 
 </html>
