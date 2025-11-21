@@ -34,7 +34,7 @@ register.addEventListener("click", () => {
       alert("User registered successfully!");
       localStorage.setItem("login",true)
       localStorage.setItem("userEmail",email)
-      console.log("User:", user);
+      window.location.href="../index.html"
     })
     .catch((error) => {
       alert(error.message);
