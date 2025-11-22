@@ -34,7 +34,7 @@ display: flex;
 flex-direction: column;
 justify-content: space-between;
 height: 22rem;
-background-image: url(../assets/comming_event_1.jpg);
+/* background-image: url(../assets/comming_event_1.jpg); */
 background-size: cover;
 background-repeat: no-repeat;
 color: white;
@@ -52,8 +52,12 @@ overflow: hidden;
 .venue{
     font-size: 1.5rem;
     font-weight: bolder;   
+    margin-bottom: 12px;
 }
 
+.date{
+    padding-left: 12px;
+}
 
 
 @media screen and (max-width: 425px){
